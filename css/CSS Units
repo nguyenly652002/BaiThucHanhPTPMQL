@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  font-size: 60px;
+}
+
+p {
+  font-size: 25px;
+  line-height: 50px;
+}
+</style>
+</head>
+<body>
+
+<h1>Nguyễn Thị Khánh Ly 2021050424</h1>
+<h2>Nguyễn Thị Khánh Ly 2021050424</h2>
+<p>Nguyễn Thị Khánh Ly 2021050424.</p>
+<p>Nguyễn Thị Khánh Ly 2021050424.</p>
+
+</body>
+</html>
