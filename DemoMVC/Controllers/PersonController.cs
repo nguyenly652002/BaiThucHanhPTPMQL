@@ -24,7 +24,7 @@ namespace DemoMVC.Controllers
         [HttpPost]
         public async Task<IActionResult> Index(string TimKiem)
         {
-          return View( await _context.Person.Where(m => m.FullName.Contains(TimKiem)) .ToListAsync());
+          return View( await _context.Person.Where((m => m.FullName.Contains(TimKiem)) || (m => m.Address.Contains(TimKiem))) .ToListAsync());
         }
         public IActionResult Create()
         {
