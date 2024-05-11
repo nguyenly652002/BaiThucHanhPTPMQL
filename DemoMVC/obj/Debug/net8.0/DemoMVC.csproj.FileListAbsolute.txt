@@ -276,3 +276,7 @@ D:\BTPTPMQL\DemoMVC\obj\Debug\net8.0\refint\DemoMVC.dll
 D:\BTPTPMQL\DemoMVC\obj\Debug\net8.0\DemoMVC.pdb
 D:\BTPTPMQL\DemoMVC\obj\Debug\net8.0\DemoMVC.genruntimeconfig.cache
 D:\BTPTPMQL\DemoMVC\obj\Debug\net8.0\ref\DemoMVC.dll
+D:\BTPTPMQL\DemoMVC\bin\Debug\net8.0\EPPlus.dll
+D:\BTPTPMQL\DemoMVC\bin\Debug\net8.0\EPPlus.Interfaces.dll
+D:\BTPTPMQL\DemoMVC\bin\Debug\net8.0\EPPlus.System.Drawing.dll
+D:\BTPTPMQL\DemoMVC\bin\Debug\net8.0\Microsoft.IO.RecyclableMemoryStream.dll
