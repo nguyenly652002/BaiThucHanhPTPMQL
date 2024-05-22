@@ -26,7 +26,7 @@ namespace DemoMVC.Controllers
         [HttpPost]
         public async Task<IActionResult> Index(string TimKiem)
         {
-          return View( await _context.Person.Where(m => m.FullName.Contains(TimKiem)) .ToListAsync());
+          return View( await _context.Person.Where(m => m.FullName.Contains(TimKiem)).ToListAsync());
         }
         public IActionResult Create()
         {
@@ -134,7 +134,7 @@ namespace DemoMVC.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult>Upload(IFormFile file)
+        public async Task<IActionResult> Upload(IFormFile file)
         {
             if (file!=null)
             {
