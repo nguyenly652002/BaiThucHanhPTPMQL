@@ -7,8 +7,7 @@ using SQLitePCL;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using DemoMVC.Models.Process;
 using OfficeOpenXml;
-using X.PagedList;
-using Microsoft.AspNetCore.Mvc.Rendering;
+
 namespace DemoMVC.Controllers
 {
     public class PersonController : Controller
@@ -19,8 +18,7 @@ namespace DemoMVC.Controllers
         {
             _context = context;
         }
-
-          public async Task<IActionResult> Index(int? page, int? PageSize)
+        public async Task<IActionResult> Index(int? page, int? PageSize)
         {
             ViewBag.PageSize = new List<SelectListItem>()
             {
@@ -37,6 +35,12 @@ namespace DemoMVC.Controllers
 
             var model =  _context.Person.ToList().ToPagedList(page ?? 1, pagesize);
             return View(model);
+        }
+
+
+        public async Task<IActionResult> Index()
+        {
+            return View( await _context.Person.ToListAsync());
         }
         [HttpPost]
         public async Task<IActionResult> Index(string TimKiem)
