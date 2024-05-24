@@ -38,12 +38,6 @@ namespace DemoMVC.Controllers
             var model =  _context.Person.ToList().ToPagedList(page ?? 1, pagesize);
             return View(model);
         }
-
-
-        public async Task<IActionResult> Index()
-        {
-            return View( await _context.Person.ToListAsync());
-        }
         [HttpPost]
         public async Task<IActionResult> Index(string TimKiem)
         {
