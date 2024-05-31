@@ -19,8 +19,12 @@ namespace DemoMVC.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var model = await _context.Student.ToListAsync();
-            return View(model);
+            return View( await _context.Student.ToListAsync());
+        }
+        [HttpPost]
+        public async Task<IActionResult> Index(string TimKiem)
+        {
+          return View( await _context.Student.Where(m => m.FullName.Contains(TimKiem)).ToListAsync());
         }
 
         public IActionResult Create()
